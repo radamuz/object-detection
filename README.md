@@ -30,6 +30,13 @@ The following packages have unmet dependencies:
                      Depends: libnvidia-encode-450 (= 450.102.04-0ubuntu1) but it is not going to be installed
                      Depends: nvidia-utils-450 (= 450.102.04-0ubuntu1) but it is not going to be installed
 
+git filter-branch --force --index-filter \
+  "git rm --cached --ignore-unmatch resnet50_coco_best_v2.0.1.h5" \
+  --prune-empty --tag-name-filter cat -- --all
+git filter-branch --force --index-filter \
+  "git rm --cached --ignore-unmatch nvidia-machine-learning-repo-ubuntu1804_1.0.0-1_amd64.deb" \
+  --prune-empty --tag-name-filter cat -- --all
+
 
 ## information sources
 * <https://github.com/tensorflow/tensorflow/issues/45930>
