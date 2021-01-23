@@ -17,7 +17,6 @@ sudo apt install python3-pip
 * To run the code, you must install the following Pyton libraries, via pip
 ```bash
 pip3 install Tensorflow testresources Numpy==1.19.3 SciPy==1.4.1 opencv-python Pillow Matplotlib==3.3.2 H5py Keras ImageAI
-
 ```
 
 The following packages have unmet dependencies:
@@ -38,10 +37,11 @@ git filter-branch --force --index-filter \
   --prune-empty --tag-name-filter cat -- --all
 
 
-## information sources
+## Information sources
 * <https://github.com/tensorflow/tensorflow/issues/45930>
 * Solve problems with nvidia graphics: 
-    * <https://www.tensorflow.org/install/gpu#install_cuda_with_apt>
+  * <https://www.tensorflow.org/install/gpu#install_cuda_with_apt>
 * <https://stackoverflow.com/questions/5226311/installing-specific-package-versions-with-pip>
-* <>
+* Download the RetinaNet model file that will be used for object detection:
+  * <https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_coco_best_v2.0.1.h5>
 * <>
