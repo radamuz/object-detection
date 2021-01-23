@@ -19,6 +19,12 @@ sudo apt install python3-pip
 pip3 install Tensorflow testresources Numpy==1.19.3 SciPy==1.4.1 opencv-python Pillow Matplotlib==3.3.2 H5py Keras ImageAI
 ```
 
+* Drivers needed to run this code on nvidia
+```bash
+sudo apt install -y --no-install-recommends nvidia-compute-utils-450 nvidia-dkms-450 nvidia-driver-450 nvidia-kernel-common-450 nvidia-kernel-source-450 nvidia-utils-450 libnvinfer7=7.1.3-1+cuda11.0 libnvinfer-dev=7.1.3-1+cuda11.0 libnvinfer-plugin7=7.1.3-1+cuda11.0
+```
+
+
 The following packages have unmet dependencies:
  nvidia-driver-450 : Depends: nvidia-dkms-450 (= 450.102.04-0ubuntu1)
                      Depends: nvidia-kernel-source-450 (= 450.102.04-0ubuntu1) but it is not going to be installed
